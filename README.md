@@ -1,0 +1,2 @@
+- Utilizando o insomnia ou o postman para fazer as requisições http
+- Utilizar o mysql (laranja e azul) extension para visualizar o banco de dados no VS Code
