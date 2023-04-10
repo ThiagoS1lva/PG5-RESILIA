@@ -1,6 +1,7 @@
+// Importa a função "openDB" do arquivo "configDB.js" responsável por abrir o banco de dados
 import { openDB } from '../configDB.js';
 
-//METODO CREATE
+// Função que cria a tabela "Coletadores" caso ela não exista
 export async function createTable() {
     openDB().then(db => {
         db.exec(`
@@ -15,16 +16,15 @@ export async function createTable() {
     });
 }
 
-//METODO READ
+// Função que retorna todos os coletadores cadastrados na tabela "Coletadores"
 export async function selectColetadores(req, res) {
     openDB().then(db => {
         db.all('SELECT * FROM Coletadores')
             .then(coletadores => res.json(coletadores))
-
     });
 }
 
-//METODO READ UNICO
+// Função que retorna um único coletador com base no seu id
 export async function selectColetador(req, res) {
     let id = req.body.id
     openDB().then(db => {
@@ -33,9 +33,7 @@ export async function selectColetador(req, res) {
     });
 }
 
-
-
-//INSERIR 
+// Função que insere um novo coletador na tabela "Coletadores"
 export async function insertColetador(req, res) {
     let Coletador = req.body;
     openDB().then(db => {
@@ -46,8 +44,7 @@ export async function insertColetador(req, res) {
     })
 }
 
-
-//METODO UPDATE
+// Função que atualiza um coletador existente na tabela "Coletadores"
 export async function updateColetador(req, res) {
     let Coletador = req.body;
     openDB().then(db => {
@@ -58,7 +55,7 @@ export async function updateColetador(req, res) {
     })
 }
 
-//DELETAR UM COLETADOR
+// Função que exclui um coletador existente na tabela "Coletadores" com base no seu id
 export async function deleteColetador(req, res) {
     let id = req.body.id
     openDB().then(db => {
@@ -70,12 +67,10 @@ export async function deleteColetador(req, res) {
     })
 }
 
-
-//DELETAR UMA COLUNA
+// Função que exclui a coluna "endereco" da tabela "Coletadores"
 export async function deleteColumn() {
     openDB().then(db => {
         db.exec(`
         ALTER TABLE Coletadores DROP COLUMN endereco;`)
     })
 }
-
