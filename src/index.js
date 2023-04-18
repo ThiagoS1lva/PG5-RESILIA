@@ -10,7 +10,10 @@ app.use(express.json());
 app.use(cors())
 
 // importando os controllers
-const ColetadorController = require('./controllers/coletador-controller')
-ColetadorController.rotas(app)
+const ColetadorController = require('./controllers/coletador-controller.js');
+const FuncionarioController = require('./controllers/funcionario-controller.js');
+
+ColetadorController.rotas(app);
+FuncionarioController.rotas(app);
 
 module.exports = app
