@@ -7,7 +7,7 @@ class MaterialDAO {
 
   // GET  --  Função ALL - Retorna todas as linhas. No callback existe o argumento ROWS
   static listar() {
-    const query = "SELECT * FROM Materiales";
+    const query = "SELECT * FROM Material";
     return new Promise((resolve, reject) => {
       db.all(query, (err, rows) => {
         if (err) {
@@ -20,7 +20,7 @@ class MaterialDAO {
 
   // GET  --  
   static buscarPorID(id) {
-    const query = "SELECT * FROM Materiales WHERE id = ?";
+    const query = "SELECT * FROM Material WHERE id = ?";
     return new Promise((resolve, reject) => {
       db.get(query, [id], (err, row) => {
         if (err) {
@@ -33,7 +33,7 @@ class MaterialDAO {
 
   // POST
   static inserir(Material) {
-    const query = "INSERT INTO Materiales (tipo, peso, quantidade, tamanho) VALUES(?, ?, ?, ?)";
+    const query = "INSERT INTO Material (tipo, peso, quantidade, tamanho) VALUES(?, ?, ?, ?)";
     return new Promise((resolve, reject) => {
       db.run(query, [Material.tipo, Material.peso, Material.quantidade, Material.tamanho], (err) => {
         if (err) {
@@ -50,7 +50,7 @@ class MaterialDAO {
   // PUT  --  
   static atualizar(id, Material) {
     const query =
-      "UPDATE Materiales SET tipo = ?, peso = ?, quantidade = ?, tamanho = ? WHERE id = ?";
+      "UPDATE Material SET tipo = ?, peso = ?, quantidade = ?, tamanho = ? WHERE id = ?";
     return new Promise((resolve, reject) => {
       db.run(
         query,
@@ -73,7 +73,7 @@ class MaterialDAO {
 
   // DELETE  --  
   static deletar(id) {
-    const query = "DELETE FROM Materiales WHERE id = ?";
+    const query = "DELETE FROM Material WHERE id = ?";
     return new Promise((resolve, reject) => {
       db.run(query, [id], (err) => {
         if (err) {
