@@ -114,7 +114,7 @@ Tamanho
  ## 📦 EQUIPE
 
 ---
-⌨️ com ❤️ por  Eliseu Machado 😊 <br>
+⌨️ com ❤️ por  Eliseu Machado 😊
                <br>  Karolayne Rodrigues  😊
                <br> Pedro Nicacio 😊
                <br>  Suzana Barbosa 😊
