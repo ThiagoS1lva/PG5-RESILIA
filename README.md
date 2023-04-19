@@ -54,7 +54,7 @@ Cargo
 Salario
 ```
 
-<h3>Coletador</h3>
+<h3>Coletador ↧</h3>
 ```
 id (Chave Primária)
 Nome
@@ -97,24 +97,3 @@ Dia
 
 <br>
  
-<h1>💡Resumo</h1>
- 
- <h3>1 - Primeiramente, vamos falar dos arquivos iniciais...</h3>
-<h1>
- 
- ```
- Server.js
- index.js
- ```
- </h1>
-   
-  //\\\\///\\\//\\\ **`index.js`**//\\\\///\\\//\\\
-   
- 
- **2 - Aqui estamos importando Cors e Express, esses que serão utilizados em nosso projeto.**<br>
- 
- <sub>caminho `./src/index.js`</sub><br>
-```
-const express = require('express')
-const cors = require('cors')
-```
