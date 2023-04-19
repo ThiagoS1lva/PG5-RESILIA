@@ -77,6 +77,17 @@ Dia
 
 ```
 
+<h3>Material ↧</h3>
+
+```
+Id (Chave Prímaria)
+Tipo
+Peso
+Quantidade
+Tamanho
+
+```
+
 
 <h2>🚀Frameworks utilizados no projeto:</h2><br>
 
