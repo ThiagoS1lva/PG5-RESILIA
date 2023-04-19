@@ -32,6 +32,8 @@ implementar uma dessas entidades.</h4>
 
 <h2>Empresa de reciclagem</h2><br>
 
+<h4>A nossa empresa é dedicada à reciclagem de materiais e resíduos, visando contribuir para um futuro mais sustentável. Com uma equipe altamente qualificada e equipamentos de ponta, trabalhamos para reduzir o impacto ambiental e promover a economia circular.</h4>
+
 <h2>🗺️Mapeamento das Entidades</h2>
 
 <h3>Cliente ↧</h3>
@@ -55,6 +57,7 @@ Salario
 ```
 
 <h3>Coletador ↧</h3>
+
 ```
 id (Chave Primária)
 Nome
