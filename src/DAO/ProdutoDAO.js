@@ -40,10 +40,10 @@ class ProdutoDAO {
         });
     }
 
-    static atualizar(produto, ID) {
+    static atualizar(ID, produto) {
         const query = "UPDATE PRODUTOS SET NOME = ?, DESCRIÇÃO = ?, DATA_DE_FABRICAÇÃO = ? WHERE ID = ?";
         return new Promise((resolve, reject) => {
-            db.run(query,[produto.nome, produto.descrição,produto.data_de_fabricação, ID], (err) => {
+            db.run(query,[produto.nome, produto.descricao,produto.datadefabricacao, ID], (err) => {
                     if (err) {
                         reject({
                             mensagem: "Erro ao atualizar o Produto",

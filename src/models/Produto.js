@@ -1,9 +1,9 @@
 class Produto {
-    constructor(nome, descrição, data_de_fabricação) {
+    constructor(nome, descricao, datadefabricacao) {
 
         this.nome = nome;
-        this.descrição = descrição; 
-        this.data_de_fabricação = data_de_fabricação;
+        this.descricao = descricao; 
+        this.datadefabricacao = datadefabricacao;
     }
 }
 
