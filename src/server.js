@@ -2,7 +2,7 @@
 const app = require('./index.js')
 
 // escolhendo a porta em que o servidor será aberto
-const PORT = process.env.PORT || 3030;
+const PORT = 3000;
 
 // abrindo o servidor na porta escolhida
 app.listen(PORT, () => {
