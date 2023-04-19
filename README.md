@@ -39,68 +39,43 @@ implementar uma dessas entidades.</h4>
 <h3>Cliente ↧</h3>
 
 ```
-ID (CHAVE PRIMÁRIA) | integer
-Nome | varchar(64)
-CPF | varchar(64)
-Endereço | varchar(64)
+ID (CHAVE PRIMÁRIA)
+Nome
+Email
+CPF
+Endereço
 ```
 
 <h3>Funcionários</h3>
 
 ```
-ID (CHAVE PRIMÁRIA) | integer
-Nome | text
-CPF | int(11)
-Cargo | varchar(30)
-Salario | int(8)
+ID (CHAVE PRIMÁRIA)
+Nome
+CPF
+Cargo
+Salario
 ```
 
 <h3>Coletador ↧</h3>
 
 ```
-id (Chave Primária) | integer
-Nome | text
-Email | text
-Cpf | text
-Data_de_nascimento | date
+id (Chave Primária)
+Nome
+Email
+Cpf
+Data_de_nascimento
 ```
 
 <h3>Pontos de Coleta ↧</h3>
 
 ```
-Id (Chave Prímaria) | integer
-Empresa | varchar(64)
-horario | varchar(64)
-lugar | varchar(64)
-Dia | varchar(64)
+Id (Chave Prímaria)
+Empresa
+horario
+lugar
+Dia
 
 ```
-
-
-<h3>Produtos ↧</h3>
-
-```
-Id (Chave Prímaria) | integer
-Nome | varchar(64)
-Descrição | varchar(64)
-Data_de_fabricação | Date
-
-```
-
-
-<h3>Material ↧</h3>
-
-```
-Id (Chave Prímaria) | integer
-tipo | varchar(64)
-peso | varchar(64)
-quantidade | varchar(64)
-tamanho | varchar(64)
-
-```
-
-
-
 
 
 <h2>🚀Frameworks utilizados no projeto:</h2><br>
