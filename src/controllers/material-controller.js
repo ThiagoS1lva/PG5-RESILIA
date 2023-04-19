@@ -1,5 +1,5 @@
 const MaterialDAO = require('../DAO/MaterialDAO.js')
-const Material = require('../models/Material.js')
+const Material1 = require('../models/Material.js')
 
 
 class MaterialController {
@@ -33,7 +33,7 @@ class MaterialController {
 
     // POST - Adicionar 1 Material
     static async inserir(req, res) {
-        const Material = new Material(
+        const Material = new Material1(
             req.body.tipo,
             req.body.peso,
             req.body.quantidade,
@@ -54,7 +54,7 @@ class MaterialController {
 
     // PUT - Editar um Material
     static async atualizaMaterial(req, res) {
-        try {const Material = new Material(
+        try {const Material = new Material1(
             req.body.tipo,
             req.body.peso,
             req.body.quantidade,
